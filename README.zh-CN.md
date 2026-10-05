@@ -12,6 +12,10 @@ RRD是在论文施工过程中可反复调用的两阶段学术锐化工具：�
 
 ## 三个核心亮点
 
+<p align="center">
+  <img src="docs/images/core-highlights-art.png" width="100%" alt="RRD的三个核心亮点：保持学术野心、可测度但不配额化的人味，以及施工期锐化。" />
+</p>
+
 RRD以三个原则组织修订：保护idea的学术野心，让人的学术表达可观察而不被公式化，并在研究与写作仍在推进时强化稿件。这三个原则分别回答：它要保护什么、如何诊断问题，以及应当在何时使用。
 
 ### 1. 保持学术野心，作为最高原则
@@ -117,7 +121,7 @@ python -m unittest discover -s tests -v
 
 ## 仓库结构与维护
 
-`SKILL.md`是agent入口；`references/`保存八份方法与写作规范；`assets/templates/`保存Goal、登记表和结果模板；`scripts/`保存六个检查脚本；`tests/`保存合成回归测试；`docs/`保存六张图、历史审查记录与已知限制。
+`SKILL.md`是agent入口；`references/`保存八份方法与写作规范；`assets/templates/`保存Goal、登记表和结果模板；`scripts/`保存六个检查脚本；`tests/`保存合成回归测试；`docs/`保存配图、历史审查记录与已知限制。
 
 事实、来源保护、匿名、知情同意和反证要求不因改写而放宽。不得虚构引用、数字、动机或结果。公开报告问题时应使用合成或已获适当授权的材料，不上传未发表稿件和参与者资料。
 

@@ -12,6 +12,10 @@ RRD is a reusable, two-stage academic sharpening skill for manuscripts in progre
 
 ## Core commitments
 
+<p align="center">
+  <img src="docs/images/core-highlights-art.png" width="100%" alt="RRD's three core commitments: ambition first, measurable human voice without fixed quotas, and sharpening while building." />
+</p>
+
 RRD is guided by three commitments: protect the ambition of the idea, make human scholarly voice observable without prescribing a formula, and strengthen the manuscript while research and writing are still underway. These commitments define what the skill protects, how it diagnoses problems, and when it should be used.
 
 ### 1. Ambition first
@@ -124,7 +128,7 @@ references/              Eight methodological and writing protocols
 assets/templates/        Goals, ledgers, registers and result templates
 scripts/                 Six inspection and verification scripts
 tests/                   Packaged synthetic regression tests
-docs/images/             Six README illustrations
+docs/images/             README illustrations
 docs/review-20261005/     Historical review records and test evidence
 docs/KNOWN_LIMITATIONS.md Open acceptance issues and use boundaries
 ```
