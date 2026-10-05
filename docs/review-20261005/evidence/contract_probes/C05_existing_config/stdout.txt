@@ -1,0 +1,1 @@
+Defense gate: PASS_WITH_WARNINGS (0 fail, 1 warn). Report: /mnt/data/rrd_v34_audit/evidence/contract_probes/C05_existing_config/report.md

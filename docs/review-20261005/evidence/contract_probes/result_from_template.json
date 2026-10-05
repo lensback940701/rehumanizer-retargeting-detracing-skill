@@ -1,0 +1,57 @@
+{
+  "goal_id": "",
+  "status": "ROUTE_CORRECTED_READY_FOR_FINAL_POLISH",
+  "target_statement": "",
+  "rewrite_intensity": "",
+  "baseline": {
+    "path": "",
+    "sha256": ""
+  },
+  "outputs": {
+    "manuscript_md": "",
+    "manuscript_docx": "",
+    "route_contract": "",
+    "route_memo": "",
+    "living_material_bank": "",
+    "added_caution_register": "",
+    "defense_gate": "",
+    "handoff_to_final_polish": ""
+  },
+  "claims_raised": [],
+  "retreats_reversed": [],
+  "retreats_kept_evidence_forced": [],
+  "sourced_material_removed": [],
+  "signals": {
+    "baseline": {},
+    "revised": {},
+    "voice_reference_mean": {}
+  },
+  "defense_gate": {
+    "overall": "",
+    "fails": [],
+    "warnings_addressed": []
+  },
+  "cold_read": {
+    "questions_answered": 0,
+    "flow_read_done": false,
+    "same_executor": true,
+    "quotable_paragraph": ""
+  },
+  "word_count": {
+    "revised": 0,
+    "cap": null,
+    "basis": ""
+  },
+  "author_queries": [],
+  "halt_reason": null,
+  "final_hashes": {
+    "final.md": "07eb6987e20f0ef04b05a8a412d0a82449f8c844275691450353e063f52b7711"
+  },
+  "sources_unchanged": true,
+  "target_recheck": {
+    "counter_evidence": "",
+    "decision": "",
+    "reason": ""
+  },
+  "final_check": "PASS"
+}

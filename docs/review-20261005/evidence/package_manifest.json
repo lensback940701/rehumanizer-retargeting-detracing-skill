@@ -1,0 +1,170 @@
+[
+  {
+    "path": "SKILL.md",
+    "status": "modified",
+    "bytes": 16511,
+    "sha256": "9dc2109b0cbbc5ab81106c7e8c471427035fe8017f6edbdabdec728af3989b46"
+  },
+  {
+    "path": "agents/openai.yaml",
+    "status": "unchanged",
+    "bytes": 394,
+    "sha256": "4e0faac99092da91f7d3017b8a2231be955ffe2bcc61675a79da848418527413"
+  },
+  {
+    "path": "assets/templates/GOAL_ROUTE_CORRECTION.md",
+    "status": "modified",
+    "bytes": 10083,
+    "sha256": "d112105f9454bd78c56d43383764e7a68a6ebf45dd686cfd55f91ee608e66453"
+  },
+  {
+    "path": "assets/templates/SHORT_LAUNCH_PROMPT.md",
+    "status": "modified",
+    "bytes": 1264,
+    "sha256": "b84027869e159fd3d7c0c2103a02431451f8b13f6108891d85960422ae389bd3"
+  },
+  {
+    "path": "assets/templates/added_caution_register.template.csv",
+    "status": "unchanged",
+    "bytes": 71,
+    "sha256": "d9fb5d92cdda0de5cb96184d3262c7709d9b798f7cbee9a843c0e4f3b27a4478"
+  },
+  {
+    "path": "assets/templates/gate_config.default.json",
+    "status": "modified",
+    "bytes": 876,
+    "sha256": "89720ffe790247287073f0bcbf2376bfba2e2335a0655a5dd111f9f0c1ea853a"
+  },
+  {
+    "path": "assets/templates/handoff_to_final_polish.template.md",
+    "status": "modified",
+    "bytes": 1492,
+    "sha256": "5d741065c5c520ff1915711932206288ebd0d4850a97d515e10c1c397a62dee2"
+  },
+  {
+    "path": "assets/templates/living_material_bank.template.csv",
+    "status": "unchanged",
+    "bytes": 161,
+    "sha256": "6e04e364df4527f1675d0ccb8919d80068208c127caed99a60ff918671083796"
+  },
+  {
+    "path": "assets/templates/material_upgrade.template.csv",
+    "status": "added",
+    "bytes": 87,
+    "sha256": "621df799ce7db77316d205d8d8a9df27b2f2418d5936b5884065f4c275d6e8c4"
+  },
+  {
+    "path": "assets/templates/route_contract.template.md",
+    "status": "modified",
+    "bytes": 1493,
+    "sha256": "c7ba1935aae4389a69580084d600bb2a40ba57ba542d34b16c7c64e6d59ebbd9"
+  },
+  {
+    "path": "assets/templates/rrd_result.template.json",
+    "status": "modified",
+    "bytes": 1223,
+    "sha256": "c59ada6d0f057c4f0e7ee7db893b087ef4f723003128e6021631cd1611ba7e38"
+  },
+  {
+    "path": "assets/templates/stage1_diagnosis.template.md",
+    "status": "modified",
+    "bytes": 2465,
+    "sha256": "0e7b90636532d6aec5eeccc7f7887b6acfd127d72a8799efc4b1db3cd90030be"
+  },
+  {
+    "path": "assets/templates/target_drift_ledger.template.csv",
+    "status": "unchanged",
+    "bytes": 169,
+    "sha256": "46a6b039e823f7a0f1ef532b5c9d7720ffb14a0e4933cc52a22cfd447f9888ba"
+  },
+  {
+    "path": "references/01-retargeting.md",
+    "status": "modified",
+    "bytes": 12071,
+    "sha256": "6d87c6b688337d288a790076fb9303baec673d1e1da9e6d20c1c4f414457d318"
+  },
+  {
+    "path": "references/02-rehumanizing.md",
+    "status": "modified",
+    "bytes": 6796,
+    "sha256": "830b8cec97b414afc369a900794a32d35648ebd8eef081a7293b9247525952ce"
+  },
+  {
+    "path": "references/03-detracing.md",
+    "status": "modified",
+    "bytes": 7226,
+    "sha256": "22b0fc0670e00d37699e50883bc8518e0f64352bb4308d3a3caabf1c650401b1"
+  },
+  {
+    "path": "references/04-anti-defense-charter.md",
+    "status": "modified",
+    "bytes": 8204,
+    "sha256": "cdebd3e25165c4636531b3720998e162f4a9e76fb2eaae106604318c4ca279cf"
+  },
+  {
+    "path": "references/05-structural-repairs.md",
+    "status": "modified",
+    "bytes": 5392,
+    "sha256": "e74f3fda340299d6d8fc1f1c4fe3e20a690974942a6223e45dda055fdee57fcd"
+  },
+  {
+    "path": "references/06-field-adapters.md",
+    "status": "modified",
+    "bytes": 5107,
+    "sha256": "d733593ba1fdbd8f02633cbf989b1c942ed6e8c92efe71df43e9639a29ee8270"
+  },
+  {
+    "path": "references/07-cohesion-and-flow.md",
+    "status": "added",
+    "bytes": 6767,
+    "sha256": "6e54a034523e0b6c7810e8e8b09af73f2767deebdcd9db7303a1612f3217c1da"
+  },
+  {
+    "path": "references/08-narrative-architecture.md",
+    "status": "added",
+    "bytes": 7534,
+    "sha256": "64f7fab297c96fa1561d7a38e2d0e87b0e47bec78e64ad4964802427fa8ab5f7"
+  },
+  {
+    "path": "scripts/defense_gate.py",
+    "status": "modified",
+    "bytes": 32880,
+    "sha256": "ac3f144bd374f1994a7e2097a9e5b788ed5450ed9f5c40f63ab11f391018994b"
+  },
+  {
+    "path": "scripts/final_check.py",
+    "status": "added",
+    "bytes": 9640,
+    "sha256": "f718ff2e29fe71990af44a19fa44487f7941e0e3a90fe2f8ad641885890b09d2"
+  },
+  {
+    "path": "scripts/rule_debt_extract.py",
+    "status": "modified",
+    "bytes": 7129,
+    "sha256": "84125f5ee88f0f48c2e05b1a24d66e4272e4799dd646529aaf34ec03d39524fa"
+  },
+  {
+    "path": "scripts/sibling_overlap_check.py",
+    "status": "modified",
+    "bytes": 8725,
+    "sha256": "b62d5a1fd77e4c2dd358f55aac357ab7689ef4514ee69b410a7c140960d42747"
+  },
+  {
+    "path": "scripts/target_drift_timeline.py",
+    "status": "modified",
+    "bytes": 10552,
+    "sha256": "75d9f08798c0eb24de9fdfc803dd90547962575afae2c8f00765c982e8fbcf53"
+  },
+  {
+    "path": "scripts/trace_scan.py",
+    "status": "modified",
+    "bytes": 45656,
+    "sha256": "b78d891b4ab40445b1622aab772aa90038d61976534845c3007e8e3138b58af0"
+  },
+  {
+    "path": "tests/test_rrd_scripts.py",
+    "status": "modified",
+    "bytes": 33346,
+    "sha256": "c5766ad66eba5bf26757d3fbaeb23f1c43bf92dcdb0b4e6d08c2aa18b1134e4c"
+  }
+]

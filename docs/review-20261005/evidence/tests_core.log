@@ -1,0 +1,19 @@
+test_R04_multisentence_quote_is_speaker_voice (test_rrd_scripts.ScanTests.test_R04_multisentence_quote_is_speaker_voice) ... ok
+test_R08_numbered_references_excluded (test_rrd_scripts.ScanTests.test_R08_numbered_references_excluded) ... ok
+test_R09_opponent_in_same_paragraph_anchors (test_rrd_scripts.ScanTests.test_R09_opponent_in_same_paragraph_anchors) ... ok
+test_cohesion_signals_discriminate (test_rrd_scripts.ScanTests.test_cohesion_signals_discriminate) ... ok
+test_connectives_are_not_closers (test_rrd_scripts.ScanTests.test_connectives_are_not_closers) ... ok
+test_en_scan (test_rrd_scripts.ScanTests.test_en_scan) ... ok
+test_zh_living_material_and_stance (test_rrd_scripts.ScanTests.test_zh_living_material_and_stance) ... ok
+test_zh_traces_and_unanchored_negation (test_rrd_scripts.ScanTests.test_zh_traces_and_unanchored_negation) ... ok
+test_R10_overlap_missing_sibling_is_incomplete (test_rrd_scripts.ToolTests.test_R10_overlap_missing_sibling_is_incomplete) ... ok
+test_R12_timeline_prefers_dates_in_names (test_rrd_scripts.ToolTests.test_R12_timeline_prefers_dates_in_names) ... ok
+test_final_check_binds_hashes (test_rrd_scripts.ToolTests.test_final_check_binds_hashes) ... ok
+test_final_check_write_result (test_rrd_scripts.ToolTests.test_final_check_write_result) ... ok
+test_overlap_ignores_reference_titles (test_rrd_scripts.ToolTests.test_overlap_ignores_reference_titles) ... ok
+test_rule_debt_skips_interview_speech (test_rrd_scripts.ToolTests.test_rule_debt_skips_interview_speech) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 9.275s
+
+OK

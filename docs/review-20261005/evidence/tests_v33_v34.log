@@ -1,0 +1,14 @@
+test_final_check_requires_explicit_gate_status_and_accepts_two_reports (test_rrd_scripts.V33Tests.test_final_check_requires_explicit_gate_status_and_accepts_two_reports) ... ok
+test_final_check_write_result_records_status (test_rrd_scripts.V33Tests.test_final_check_write_result_records_status) ... ok
+test_overlap_checks_short_quotes_exactly (test_rrd_scripts.V33Tests.test_overlap_checks_short_quotes_exactly) ... ok
+test_relation_verb_tic_warning (test_rrd_scripts.V33Tests.test_relation_verb_tic_warning) ... ok
+test_timeline_reports_whitelisted_files_not_read (test_rrd_scripts.V33Tests.test_timeline_reports_whitelisted_files_not_read) ... ok
+test_case_selection_with_reason_clause (test_rrd_scripts.V34Tests.test_case_selection_with_reason_clause) ... ok
+test_condition_clause_guides_focus_shift (test_rrd_scripts.V34Tests.test_condition_clause_guides_focus_shift) ... ok
+test_internal_document_labels_are_traces (test_rrd_scripts.V34Tests.test_internal_document_labels_are_traces) ... ok
+test_tag_word_surge (test_rrd_scripts.V34Tests.test_tag_word_surge) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 9.470s
+
+OK

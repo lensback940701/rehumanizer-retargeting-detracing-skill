@@ -1,0 +1,34 @@
+{
+  "carried_sentence_similarity": 0.8,
+  "min_revised_share_of_baseline": 0.3,
+  "negation_min_reduction": 0.3,
+  "negation_floor_per_k": {
+    "zh": 0.4,
+    "en": 2.5
+  },
+  "closer_share_warn": 0.2,
+  "code_tokens_warn_per_k": 3.0,
+  "abstract_terms_min_reduction": 0.15,
+  "caveat_share_warn": 0.25,
+  "lit_chain_warn_share": 0.35,
+  "topic_link_tolerance": 0.05,
+  "sentence_length_ratio_warn": 0.8,
+  "attribution_ratio_warn": 1.2,
+  "epigram_closers_warn": 2,
+  "conversion_frame_warn": 0.05,
+  "relation_verb_floor_per_k": {
+    "zh": 1.5,
+    "en": 1.5
+  },
+  "relation_verb_ref_ratio": 3.0,
+  "inferential_floor_per_k": {
+    "zh": 1.2,
+    "en": 2.0
+  },
+  "inferential_ref_ratio": 2.0,
+  "min_reason_chars": 12,
+  "tag_word_min_count": 10,
+  "tag_word_min_spread": 0.45,
+  "tag_word_base_ratio": 2.0,
+  "tag_word_ref_ratio": 3.0
+}

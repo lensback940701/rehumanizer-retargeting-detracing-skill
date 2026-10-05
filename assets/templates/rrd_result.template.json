@@ -1,0 +1,58 @@
+{
+  "goal_id": "",
+  "status": "",
+  "target_statement": "",
+  "rewrite_intensity": "",
+  "baseline": {
+    "path": "",
+    "sha256": ""
+  },
+  "outputs": {
+    "manuscript_md": "",
+    "manuscript_docx": "",
+    "route_contract": "",
+    "route_memo": "",
+    "living_material_bank": "",
+    "added_caution_register": "",
+    "defense_gate": "",
+    "handoff_to_final_polish": ""
+  },
+  "claims_raised": [],
+  "retreats_reversed": [],
+  "retreats_kept_evidence_forced": [],
+  "sourced_material_removed": [],
+  "signals": {
+    "baseline": {},
+    "revised": {},
+    "voice_reference_mean": {}
+  },
+  "defense_gate": {
+    "overall": "",
+    "fails": [],
+    "warnings_addressed": []
+  },
+  "cold_read": {
+    "questions_answered": 0,
+    "flow_read_done": false,
+    "same_executor": true,
+    "quotable_paragraph": ""
+  },
+  "word_count": {
+    "revised": 0,
+    "cap": null,
+    "basis": ""
+  },
+  "author_queries": [],
+  "halt_reason": null,
+  "final_hashes": {},
+  "sources_unchanged": null,
+  "target_recheck": {
+    "counter_evidence": "",
+    "decision": "",
+    "reason": ""
+  },
+  "final_check": {
+    "overall": "",
+    "report": "qa/final_check.md"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "artifact": "rehumanizer-retargeting-detracing-skill_v3.4_20261004.zip",
+  "artifact_sha256": "e700905b50a965377fea54e851cac721c4cbea2436a8f0acab8538fcd6402c2b",
+  "provenance": "developer_reported_in_current_conversation",
+  "fixture_scope": "same_manuscript_reported; byte_identical_inputs_not_verified",
+  "score_max": null,
+  "rubric": null,
+  "generator_model": null,
+  "evaluator": null,
+  "untreated_baseline_score": null,
+  "runs": [
+    {
+      "evaluation_id": "B01",
+      "score": 39,
+      "actual_commit": null,
+      "input_sha256": null,
+      "output_sha256": null,
+      "repeats": null
+    },
+    {
+      "evaluation_id": "B02",
+      "score": 41,
+      "actual_commit": null,
+      "input_sha256": null,
+      "output_sha256": null,
+      "repeats": null
+    },
+    {
+      "evaluation_id": "B03",
+      "score": 42,
+      "actual_commit": null,
+      "input_sha256": null,
+      "output_sha256": null,
+      "repeats": null
+    },
+    {
+      "evaluation_id": "B04",
+      "score": 37,
+      "actual_commit": null,
+      "input_sha256": null,
+      "output_sha256": null,
+      "repeats": null
+    }
+  ],
+  "selected_evaluation": "B03",
+  "rollback_from": "B04",
+  "independent_manuscript_quality_rerun": false,
+  "note": "Record-local B01-B04 identifiers do not identify actual semantic versions. No fifth independent score inferred after rollback."
+}

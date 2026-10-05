@@ -1,0 +1,3 @@
+sentence_excerpt,cue_type,evidence_locator,why_reader_needs_it,section
+The council may have revised eligibility rather than budgets after residents submitted their records.,HEDGE,SYNTHETIC-SRC01 paragraph 1,The available record leaves the timing of the eligibility revision uncertain.,Findings
+The council may have revised eligibility rather than budgets after residents submitted their records.,NEGATION,SYNTHETIC-SRC01 paragraph 1,"The recorded decision concerns eligibility rules, not a change in budget allocations.",Findings

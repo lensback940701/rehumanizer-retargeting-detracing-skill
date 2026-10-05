@@ -1,0 +1,39 @@
+{
+  "overall": "PASS",
+  "final_hashes": {
+    "/mnt/data/rrd_v34_audit/evidence/contract_probes/final.md": "07eb6987e20f0ef04b05a8a412d0a82449f8c844275691450353e063f52b7711"
+  },
+  "sources_unchanged": true,
+  "checks": [
+    {
+      "check": "F1_GATE_BINDING",
+      "status": "PASS",
+      "detail": "gate_md.json: gate revised sha 07eb6987e20f matches a final file"
+    },
+    {
+      "check": "F1_GATE_STATUS",
+      "status": "PASS",
+      "detail": "gate_md.json: gate overall PASS"
+    },
+    {
+      "check": "F4_SOURCES",
+      "status": "PASS",
+      "detail": "all sources unchanged"
+    },
+    {
+      "check": "F3_RESULT_HASHES",
+      "status": "PASS",
+      "detail": "rrd_result final_hashes cover exactly the final files"
+    },
+    {
+      "check": "F3_RESULT_STATUS",
+      "status": "PASS",
+      "detail": "status 'ROUTE_CORRECTED_READY_FOR_FINAL_POLISH'"
+    },
+    {
+      "check": "F3_RESULT_SOURCES",
+      "status": "PASS",
+      "detail": "rrd_result sources_unchanged=True vs computed True"
+    }
+  ]
+}

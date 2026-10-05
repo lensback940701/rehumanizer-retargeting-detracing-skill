@@ -1,0 +1,18 @@
+test_R01_new_hedge_inside_carried_sentence_is_caught (test_rrd_scripts.GateTests.test_R01_new_hedge_inside_carried_sentence_is_caught) ... ok
+test_R02_registered_negation_not_failed_downstream (test_rrd_scripts.GateTests.test_R02_registered_negation_not_failed_downstream) ... ok
+test_R03_R11_registered_association_in_conclusion_passes (test_rrd_scripts.GateTests.test_R03_R11_registered_association_in_conclusion_passes) ... ok
+test_R05_trace_after_many_candidates_is_caught (test_rrd_scripts.GateTests.test_R05_trace_after_many_candidates_is_caught) ... ok
+test_R06_empty_revision_fails (test_rrd_scripts.GateTests.test_R06_empty_revision_fails) ... ok
+test_R07_register_needs_type_and_locator (test_rrd_scripts.GateTests.test_R07_register_needs_type_and_locator) ... ok
+test_R13_docx_and_md_equivalent (test_rrd_scripts.GateTests.test_R13_docx_and_md_equivalent) ... ok
+test_cohesion_warning (test_rrd_scripts.GateTests.test_cohesion_warning) ... ok
+test_defensive_revision_fails (test_rrd_scripts.GateTests.test_defensive_revision_fails) ... ok
+test_quote_loss_needs_memo (test_rrd_scripts.GateTests.test_quote_loss_needs_memo) ... ok
+test_registered_caution_ok_generic_reason_rejected (test_rrd_scripts.GateTests.test_registered_caution_ok_generic_reason_rejected) ... ok
+test_rehumanized_revision_passes (test_rrd_scripts.GateTests.test_rehumanized_revision_passes) ... ok
+test_unchanged_lean_paper_passes (test_rrd_scripts.GateTests.test_unchanged_lean_paper_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 15.703s
+
+OK

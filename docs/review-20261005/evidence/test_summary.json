@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "log": "tests_core.log",
+      "tests": 14,
+      "ok": 14,
+      "skipped": 0,
+      "complete": true
+    },
+    {
+      "log": "tests_gates.log",
+      "tests": 13,
+      "ok": 13,
+      "skipped": 0,
+      "complete": true
+    },
+    {
+      "log": "tests_v3_v32.log",
+      "tests": 11,
+      "ok": 11,
+      "skipped": 0,
+      "complete": true
+    },
+    {
+      "log": "tests_v33_v34.log",
+      "tests": 9,
+      "ok": 9,
+      "skipped": 0,
+      "complete": true
+    }
+  ],
+  "total": 47,
+  "passed": 47,
+  "skipped": 0,
+  "package_source_files_changed": [],
+  "archive_sha256": "e700905b50a965377fea54e851cac721c4cbea2436a8f0acab8538fcd6402c2b",
+  "note": "The suite was rerun successfully in four groups after two monolithic invocations exceeded the tool execution window. Partial invocations are not counted as completed tests."
+}
