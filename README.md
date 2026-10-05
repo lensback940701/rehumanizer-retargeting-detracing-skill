@@ -10,37 +10,37 @@ RRD is a reusable, two-stage academic sharpening skill for manuscripts in progre
 
 **Version:** v3.4 · **Use:** supervised working baseline · **Acceptance hardening:** pending · **License:** maintainer decision pending; no license has been assigned.
 
-## Three defining commitments
+## Core commitments
 
-### 1. Ambition first: end the soften-restore-soften loop
+RRD is guided by three commitments: protect the ambition of the idea, make human scholarly voice observable without prescribing a formula, and strengthen the manuscript while research and writing are still underway. These commitments define what the skill protects, how it diagnoses problems, and when it should be used.
 
-**Preserving the idea's scholarly ambition is the highest editorial principle.** RRD is not another cycle of adding cautions and then removing them. It puts the research target above generic style rules, retires inherited constraints that diluted the contribution, and places the burden of proof on any new weakening. Once the author has agreed a supportable target, later checks do not reopen it merely to sound safer: a change needs new evidence or a new author decision.
+### 1. Ambition first
 
-The aim is to keep the strongest worthwhile argument the evidence supports, not to manufacture certainty. Facts, accurate quotation and genuine counter-evidence remain boundaries; they are not excuses for routine precautionary retreat.
+**Preserving the idea's scholarly ambition is RRD's highest editorial principle.** The goal is not to make a manuscript merely safer, tidier or less exposed. It is to recover the most valuable research claim that the available evidence can genuinely support.
 
-### 2. Human scholarly voice made measurable, with room for variation
+RRD therefore does more than remove hedges. It is designed to end the repeated **soften–restore–soften loop** that can take over AI-assisted revision. Once the author has confirmed a supportable research target, later checks should not quietly weaken it merely to sound more cautious. Reconsidering that target requires new evidential grounds or an explicit author decision, not a generic preference for safer prose.
 
-Instead of requesting vaguely more human prose, RRD translates selected dimensions into **inspectable, quantitative proxies**:
+Facts, accurate quotation and genuine counter-evidence remain non-negotiable boundaries. They are not a standing excuse for lowering the paper's intellectual ambition. Retargeting restores the argument's direction; retiring unnecessary defensive constraints prevents subsequent checks from undoing that recovery.
 
-| Dimension | Existing measurements and checks |
-| --- | --- |
-| Sentence rhythm | Sentence-length mean, standard deviation and coefficient of variation; short-sentence share and staccato runs |
-| Material presence | Quotation and number densities, sourced-quotation records, and attribution load |
-| Authorial presence | Explicit stance cues and actor-code signals, interpreted alongside a qualitative reading of situated actors |
-| Argumentative continuity | Adjacent-sentence topic linkage and relation-marker signals |
-| Template pressure | Repeated paragraph openings, stock conversion frames, relation-verb tics and spreading non-core labels |
+### 2. Measurable human voice
 
-**Human-voice indicators are observable statistics, not prescribed output quantities.** RRD does not tell the writer to insert exactly three quotations, use a transition every two sentences, or hit a fixed stance density. It leaves their realization to the model's context-sensitive, potentially variable generation, then measures what actually appeared. The observed counts and distributions may differ across passages and runs; they are not targets sampled or allocated in advance.
+RRD makes selected dimensions of human scholarly voice **observable, measurable and comparable**. Rather than treating human feel as an undefined aesthetic preference, it examines sentence rhythm, quotation density, authorial stance, paragraph cohesion, expressive variation and recurring templates.
 
-**Measurable diagnostics; stochastic realization; no fixed quotas.** The generative process supplies the variation; the skill supplies the research priorities, source boundaries, reference-relative diagnostics and interpretive review. No separate random sampler is required by this design. Compare the resulting signals with the author's reference writing, and investigate warnings in context. Repair broken argument, flattened material or monotonous prose—not a count merely because it differs from a reference. Quantification makes selected features inspectable without prescribing a single template for human voice.
+**These indicators can be counted and interpreted, but their realized quantities must not be prescribed as fixed quotas.** RRD does not decide in advance that a draft must contain exactly three quotations, a transition every two sentences, or a fixed density of stance markers. The model generates context-sensitive phrasing, rhythm and material placement; the resulting counts and distributions are then measured and read in context.
 
-Variation applies to expression; the agreed research target and fidelity to the sources remain fixed.
+**Measurable diagnostics; stochastic realization; no fixed quotas.** Variation belongs to the model's generative process, not to a separate sampler allocating stylistic quantities in advance. Reference writing provides a basis for comparison, not a statistical template every draft must reproduce. A warning directs attention to broken flow, flattened material or monotonous expression; it does not instruct the writer to optimize a number for its own sake.
 
-### 3. A tool for work in progress, not a finalization skill
+The aim is not a universal human-voice score. It is to make selected writing problems easier to detect and repair while preserving room for expressive variation. Facts, quotations, source fidelity and the agreed research target are not randomized.
 
-Use RRD whenever an existing draft or section needs reinforcement: after the idea has been diluted, when material has become detached from the argument, when prose has become mechanical, or when a new insight requires retargeting. A whole paper is not a prerequisite for a scoped invocation; sufficient inspectable text and accessible support are.
+### 3. Sharpen while building
 
-Each invocation keeps the **read-only diagnosis → author authorization → scoped revision** structure. Its output is a stronger working checkpoint that returns to research and writing. It does not close the project, certify submission readiness or automatically hand control to final polish. Reuse is available throughout development, not a requirement to keep revising an unchanged manuscript.
+**RRD is an in-process sharpening tool, not a finalization skill.** Bring it into the workflow when an idea has been diluted, evidence has become detached from the argument, prose has become mechanical, or a new insight requires a sharper research target.
+
+It can be used throughout drafting, revision and rethinking, on either a whole manuscript or a clearly scoped section. The prerequisite is inspectable text and accessible supporting material—not proximity to submission. Each invocation retains the **read-only diagnosis → author authorization → scoped revision** structure.
+
+The output is a stronger working checkpoint that returns to research and writing. It does not declare the manuscript finished, certify submission readiness, or require a handoff to final polish. Reuse responds to substantive development needs; it is not an instruction to keep revising an unchanged draft.
+
+**Ambition sets the direction. Measurable signals inform the diagnosis. In-process sharpening defines the role.**
 
 ## What it does
 
