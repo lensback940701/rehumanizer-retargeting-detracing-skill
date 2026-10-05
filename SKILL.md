@@ -1,11 +1,16 @@
 ---
 name: rehumanizer-retargeting-detracing-skill
-description: "Two-stage route correction for a complete academic manuscript that drifted during repeated revision: the original research target was lost or diluted, the contribution became cheap, the prose reads mechanical, disconnected or over-defensive, sections lack lead-ins, and workflow traces leaked into the text. Stage 1 (this invocation) diagnoses read-only, recovers the best supportable target from early artifacts and raw sources, audits inherited rule debt, confirms the route with the author, and writes a Goal plus a short launch prompt. Stage 2 runs in a new conversation under that Goal and rewrites at the chosen intensity, then verifies the final file. Sits before hq-final-polish-harness. Not for first drafts, local hedging fixes (press-conference-revision), final polish or word fitting, literature search, or submission."
+description: "Reusable academic sharpening during manuscript development, not a finalization or closure skill. Preserve the idea's ambition as the highest editorial principle: keep evidence-supported claims strong and retire the soften-restore-soften loop. Turn human scholarly voice into measurable proxies for sentence rhythm, sourced material, author stance, cohesion and template repetition, calibrated to author references rather than rigid quotas. Human-voice counts are observed after generation, never prescribed as quotas: realization varies through the model's own generative process, not a separate sampler. Invoke whenever an existing draft or section needs retargeting, rehumanizing or detracing; repeat as the work evolves. Stage 1 diagnoses read-only and agrees the target and scope with the author; Stage 2 revises in a new conversation under the handoff Goal. Preserve facts, source integrity and genuine counter-evidence. Not for blank-page drafting, final polish, word fitting or submission."
 ---
 
 # Rehumanizer · Retargeting · Detracing (RRD) — v3.4
 
-A route-correction stage for manuscripts that have become *correct but lifeless*:
+A reusable sharpening tool for manuscripts **while they are being built**,
+not a finalization, closure or submission-readiness skill. Invoke it whenever
+an existing draft or section needs a sharper target, stronger interpretation
+or a more human scholarly voice; repeat as the work evolves.
+
+A typical case is a draft that has become *correct but lifeless*:
 a strong idea, a reasonable first draft, then rounds of audit-driven revision,
 each adding locks and caveats, until the paper argues nothing it could lose,
 no person can be seen in it, its sentences no longer connect, and its
@@ -24,16 +29,52 @@ RRD does three things, in this order:
    negations and caveat scatter, and retire the rule debt that produced them,
    without creating a new template in their place.
 
+## Core commitments
+
+**Ambition first.** Preserving the idea's scholarly ambition is the highest
+editorial principle. Style rules, scanner warnings and generic caution must
+serve the research target, not repeatedly dilute it. Once the author has
+settled a supportable target and retired unnecessary defensive constraints,
+later checks do not reopen that decision merely to sound safer. Reopening
+requires new evidential grounds or an explicit change in the author's goal.
+Facts, source integrity and genuine counter-evidence remain non-negotiable
+boundaries, not a standing license to weaken the argument. Resolve the
+soften-restore-soften loop through the route contract, not repeated bargaining
+over individual hedges.
+
+**Measurable diagnostics, stochastic realization, no quotas.** Operationalize
+selected aspects of human scholarly voice through sentence-length variation,
+quotation and number densities, author-stance cues, topic linkage, staccato
+runs and repeated-template signals. Their realized counts are observed after
+generation, never prescribed as mandatory quantities. Let the model's
+context-sensitive generation vary the phrasing, rhythm and placement of
+material; then compare the observed signals with the author's voice
+references and read the result in context. Randomness belongs to the
+realization of expression, not to a separate sampler that allocates counts
+in advance. Do not force exactly N quotations, transitions, stance markers or
+sentence shapes, and do not redraw targets until a check passes. Repair
+what a warning reveals in the argument or reading experience, not the number
+itself. Facts, quotations, evidence boundaries and the research target are
+not randomized. A universal human-feel score is not the goal.
+
+**Sharpen during construction.** RRD is callable throughout drafting and
+revision once there is inspectable text and accessible supporting material.
+It may work on a declared section or the whole draft. Each invocation ends
+with a revised checkpoint and a handoff back to the research workflow; it
+does not declare the manuscript finished. Reinvoke for substantive drift or
+a new development need, not to repeat cosmetic checks on an unchanged draft.
+
 ## Position among sibling skills
 
 | | press-conference-revision | **RRD** | hq-final-polish-harness |
 | --- | --- | --- | --- |
-| when | any writing step | once, when a mature draft has drifted | once, at the end |
+| when | any writing step | whenever an existing draft or section needs sharpening; repeat as needed | once, at the end |
 | unit | sentence/paragraph rhetoric | route: target, spine, section jobs, voice, flow | form, wording, word band, dual copies |
 | claim rule | same or narrower | **best supportable** (may restore claims dropped without evidentiary reason; never raised for its own sake) | same or narrower than the RRD output |
 | sources | the manuscript | manuscript **plus raw sources and origin artifacts** | admitted evidence |
 | locks | respects all | **audits and retires inherited style/process locks** (never ethics, facts, source protection) | respects RRD's route contract |
 
+Final polish is a separate downstream choice, not the required next step.
 Do not import final polish's no-net-word-loss rule, citation-PDF lane or
 submission checklist. If the only problem is local hedging, use
 press-conference-revision and say so.
@@ -60,7 +101,8 @@ Read-only toward the manuscript; ends with a Goal and a launch prompt.
 
 ### S1.0 Intake
 
-Identify, asking only for what cannot be found: `BASELINE`; `PROJECT_ROOT`;
+Identify, asking only for what cannot be found: `BASELINE`; `REVISION_SCOPE`
+(a named section, a set of sections, or the whole draft); `PROJECT_ROOT`;
 `RAW_SOURCE_ROOTS`; `ORIGIN_ARTIFACTS` (proposals, outlines, early abstracts,
 first drafts, memos, conversation logs); `VOICE_REFERENCES` (the author's
 published papers; otherwise papers the author names as models);
@@ -71,6 +113,11 @@ length limit; `PAPER_TYPE`; sibling papers from the same dataset.
 `CONTEXT_SOURCES`: where macro and regional facts for the case chapter's
 lead-in may come from (cited literature, official statistics, policy
 documents, the author's published papers). Ask the author if none are found.
+
+For a partial draft, assess only the supplied scope and record what remains
+unassessed. Do not invent missing sections, treat them as defects, or interpret
+a successful local revision as approval of the whole paper. Apply the phases
+below only to the author-authorized scope.
 
 **Second Stage 1 on an RRD output.** When the baseline is itself a
 route-corrected draft:
@@ -219,7 +266,8 @@ The Goal carries the procedure; its steps branch by intensity:
   `final_check.py --manuscript <final.docx> --manuscript <final.md> --gate-json <docx gate> --gate-json <md gate> --overlap-json ... [--semantic-review qa/sibling_semantic_review.md] --result-json rrd_result.json --write-result --source-manifest source_manifest.csv`
   (`--write-result` fills `final_hashes` and `sources_unchanged`; never type them by hand).
   The delivered file, the reports and `rrd_result.json` must carry the same
-  hash. Deliver and stop.
+  hash. Deliver the checkpoint and stop this invocation; return to ongoing
+  research and drafting unless the author separately chooses final polish.
 
 Required references for Stage 2: 01–05, 07 and 08 in full, plus the matching
 section of 06.
@@ -270,9 +318,13 @@ Stage 1:
 - `HOLD_INPUTS` (core evidence inaccessible or no baseline)
 - `NOT_RRD_CASE`
 
-Stage 2 completion (work done):
+Stage 2 completion (this invocation done, not the manuscript finalized):
 - `ROUTE_CORRECTED_READY_FOR_FINAL_POLISH`
 - `ROUTE_CORRECTED_WITH_AUTHOR_QUERIES`
+
+`ROUTE_CORRECTED_READY_FOR_FINAL_POLISH` is a legacy status name: it indicates
+eligibility for a separate polishing step, not a requirement to take it or a
+claim of submission readiness. The author may continue development instead.
 
 Stage 2 halts (work paused, not success):
 - `HOLD_TARGET_UNCONFIRMED`
