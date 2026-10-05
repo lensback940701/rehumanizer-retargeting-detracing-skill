@@ -1,6 +1,6 @@
 interface:
   display_name: "Rehumanizer · Retargeting · Detracing"
-  short_description: "Route correction for drifted mature manuscripts; Stage 1 emits a Goal, Stage 2 rewrites under it"
-  default_prompt: "Use $rehumanizer-retargeting-detracing-skill Stage 1 to diagnose drift, recover the original target and emit a Goal plus short launch prompt."
+  short_description: "Ambition first; measurable voice, no quotas; reusable sharpening"
+  default_prompt: "Use $rehumanizer-retargeting-detracing-skill Stage 1 only to diagnose the supplied draft or sections read-only, preserve the idea's ambition, assess human-voice signals as post-generation statistics rather than fixed output quotas, and emit a Goal plus short launch prompt for an author-authorized in-process revision, not finalization."
 policy:
   allow_implicit_invocation: false
