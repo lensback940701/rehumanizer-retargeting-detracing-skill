@@ -1,0 +1,70 @@
+name: Import approved README illustrations
+
+on:
+  push:
+    branches: [main]
+    paths: [docs/illustration-import.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Download approved images and commit repository-local copies
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, json, os, urllib.request, urllib.parse
+          repo = os.environ['REPOSITORY']
+          token = os.environ['GH_TOKEN']
+          api = 'https://api.github.com/repos/' + repo
+          def request(path, data=None, method=None):
+              payload = None if data is None else json.dumps(data).encode('utf-8')
+              req = urllib.request.Request(api + path, data=payload, method=method,
+                  headers={'Authorization': 'Bearer ' + token,
+                           'Accept': 'application/vnd.github+json',
+                           'Content-Type': 'application/json',
+                           'User-Agent': 'RRD-illustration-import'})
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  return json.load(response)
+          head = request('/git/ref/heads/main')['object']['sha']
+          commit = request('/git/commits/' + head)
+          config = request('/contents/docs/illustration-import.json?ref=' + head)
+          entries = json.loads(base64.b64decode(config['content']))['images']
+          expected = {'hero-cyber.png', 'overview.png', 'quickstart.png',
+                      'workflow.png', 'before-after.png', 'test-results.png'}
+          if {entry['name'] for entry in entries} != expected or len(entries) != 6:
+              raise SystemExit('The import must contain exactly the six approved illustrations.')
+          tree = []
+          records = []
+          for entry in entries:
+              url = entry['url']
+              parts = urllib.parse.urlsplit(url)
+              if parts.scheme != 'https':
+                  raise SystemExit('Image source must use HTTPS.')
+              with urllib.request.urlopen(url, timeout=60) as response:
+                  raw = response.read(15000001)
+              if len(raw) > 15000000 or not raw.startswith(b'\x89PNG\r\n\x1a\n'):
+                  raise SystemExit('Unexpected image size or format: ' + entry['name'])
+              digest = hashlib.sha256(raw).hexdigest()
+              if entry.get('sha256') and digest != entry['sha256']:
+                  raise SystemExit('Image checksum mismatch: ' + entry['name'])
+              blob = request('/git/blobs', {'content': base64.b64encode(raw).decode('ascii'), 'encoding': 'base64'})
+              path = 'docs/images/' + entry['name']
+              tree.append({'path': path, 'mode': '100644', 'type': 'blob', 'sha': blob['sha']})
+              records.append({'path': path, 'sha256': digest, 'bytes': len(raw)})
+          tree.append({'path': 'docs/images/IMPORT_MANIFEST.json', 'mode': '100644', 'type': 'blob',
+                       'content': json.dumps({'images': records}, ensure_ascii=False, indent=2) + '\n'})
+          tree.append({'path': 'docs/illustration-import.json', 'mode': '100644', 'type': 'blob', 'sha': None})
+          new_tree = request('/git/trees', {'base_tree': commit['tree']['sha'], 'tree': tree})
+          new_commit = request('/git/commits', {'message': 'docs: import six approved README illustrations',
+                           'tree': new_tree['sha'], 'parents': [head]})
+          request('/git/refs/heads/main', {'sha': new_commit['sha'], 'force': False}, method='PATCH')
+          print('Imported six illustrations. Commit:', new_commit['sha'])
+          PY
